@@ -1,4 +1,4 @@
-import Main from "@src/main.js"
+import Main from "@source/main.js"
 
 addEventListener("load", () => {
     Main()
