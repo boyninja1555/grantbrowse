@@ -15,7 +15,9 @@ Grantbrowse is a lightweight, open-source web browser developed by Grant Weadon.
 4. After installation, Grantbrowse will be ready to use.
 
 ### macOS/Linux
-1. Not available (yet)
+1. Download the source code
+2. Compile using JDK 11 and above
+3. After compilation, you can run the JAR file.
 
 ## Usage
 Once installed, open Grantbrowse like any other application. You can start browsing the web and access your preferred web pages (that support JSON viewing).
