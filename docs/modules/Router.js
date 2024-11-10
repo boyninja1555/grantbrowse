@@ -14,8 +14,10 @@ function useRoutes() {
     
     if (callback) {
         callback()
-    } else {
+    } else if (routes.error) {
         routes.error()
+    } else {
+        console.log("Route not found, and no error callback is set")
     }
 }
 
