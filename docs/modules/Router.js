@@ -4,6 +4,10 @@ function addRoute(path, callback) {
     routes[path] = callback
 }
 
+function setErrorCallback(callback) {
+    routes.error = callback
+}
+
 function useRoutes() {
     const route = location.hash.slice(1) || "/"
     const callback = routes[route]
@@ -11,11 +15,11 @@ function useRoutes() {
     if (callback) {
         callback()
     } else {
-        console.log("Route not found")
+        routes.error()
     }
 }
 
 addEventListener("hashchange", useRoutes)
 addEventListener("load", useRoutes)
 
-export { addRoute }
+export { addRoute, setErrorCallback }

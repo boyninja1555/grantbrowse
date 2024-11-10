@@ -1,12 +1,13 @@
-import { addRoute } from "@modules/Router.js"
+import { addRoute, setErrorCallback } from "@modules/Router.js"
 import { createElement } from "@modules/Elements.js"
 
-export default () => {
-    const title = createElement("h1", "Hello, World!", { id: "title" }, {
-        backgroundColor: "lightblue",
-    })
+import errorPage from "./pages/Error.js"
 
+export default () => {
     addRoute("/", () => {
-        alert("Welcome home!")
+        const title = createElement("h1", "Hello, World!", { id: "title" }, {
+            backgroundColor: "lightblue",
+        })
     })
+    setErrorCallback(errorPage)
 }
