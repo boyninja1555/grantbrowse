@@ -1,4 +1,4 @@
-import { addRoute, use } from "@modules/Router.js"
+import { addRoute, useRoutes } from "@modules/Router.js"
 import { createElement } from "@modules/Elements.js"
 
 export default () => {
