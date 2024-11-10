@@ -1,6 +1,6 @@
 # Grantbrowse
 A browser which uses a new type of website renderer that renders JSON. It also has some other features you might not find in other browsers.
-Grantbrowse is a lightweight, open-source web browser developed by FlappyGrant Studios. Built using Java, it provides a custom browsing experience with modern features tailored to enhance web navigation. This browser is designed for those looking for a streamlined, efficient alternative to mainstream browsers.
+Grantbrowse is a lightweight, open-source web browser developed by Grant Weadon. Built using Java, it provides a custom browsing experience with modern features tailored to enhance web navigation. This browser is designed for those looking for a streamlined, efficient alternative to mainstream browsers.
 
 ## Features
 - Custom user interface developed using Java Swing.
