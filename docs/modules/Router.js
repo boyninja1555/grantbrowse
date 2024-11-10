@@ -21,7 +21,4 @@ function useRoutes() {
     }
 }
 
-addEventListener("hashchange", useRoutes)
-addEventListener("load", useRoutes)
-
 export { addRoute, setErrorCallback }
