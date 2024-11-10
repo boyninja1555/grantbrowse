@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Grantbrowse",
+      "request": "launch",
+      "mainClass": "com.flappygrant.grantbrowse.Main"
+    }
+  ]
+}
