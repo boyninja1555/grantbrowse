@@ -5,7 +5,7 @@ function addRoute(path, callback) {
 }
 
 function useRoutes() {
-    const route = `${location.pathname.split("grantbrowse/")[1]}/`
+    const route = location.hash.slice(1) || "/"
     const callback = routes[route]
     
     if (callback) {
@@ -15,4 +15,7 @@ function useRoutes() {
     }
 }
 
-export { addRoute, useRoutes }
+addEventListener("hashchange", useRoutes)
+addEventListener("load", useRoutes)
+
+export { addRoute }

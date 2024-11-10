@@ -1,4 +1,4 @@
-import { addRoute, useRoutes } from "@modules/Router.js"
+import { addRoute } from "@modules/Router.js"
 import { createElement } from "@modules/Elements.js"
 
 export default () => {
@@ -9,5 +9,4 @@ export default () => {
     addRoute("/", () => {
         alert("Welcome home!")
     })
-    useRoutes()
 }
