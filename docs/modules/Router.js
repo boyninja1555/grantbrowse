@@ -21,4 +21,4 @@ function useRoutes() {
     }
 }
 
-export { addRoute, setErrorCallback }
+export { addRoute, setErrorCallback, useRoutes }
